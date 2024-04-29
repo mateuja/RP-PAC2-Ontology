@@ -1,0 +1,715 @@
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO> <http://purl.org/dc/elements/1.1/creator> "Jaume Mateu Mateu" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO> <http://purl.org/dc/elements/1.1/title> "FSSO (Flight Satisfaction Survey Ontology)" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt> <http://www.w3.org/2000/01/rdf-schema#comment> "A trip ends at an itinerary point." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt> <http://www.w3.org/2000/01/rdf-schema#label> "endsAt" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> <http://www.w3.org/2000/01/rdf-schema#comment> "A review evaluates a flight." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> <http://www.w3.org/2000/01/rdf-schema#label> "evaluates" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively> <http://www.w3.org/2000/01/rdf-schema#comment> "A review might evaluate a flight positively." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively> <http://www.w3.org/2000/01/rdf-schema#label> "evaluatesPositively" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight starts from an itinerary point." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> <http://www.w3.org/2000/01/rdf-schema#label> "from" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger has a booking for a flight." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> <http://www.w3.org/2000/01/rdf-schema#label> "hasBooking" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "A trip has one or more associated flights." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight> <http://www.w3.org/2000/01/rdf-schema#label> "hasFlight" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover> <http://www.w3.org/2000/01/rdf-schema#comment> "A trip might have a layover at an itinerary point." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover> <http://www.w3.org/2000/01/rdf-schema#label> "hasLayover" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality> <http://www.w3.org/2000/01/rdf-schema#comment> "A passenger has a nationality (is from a country)." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality> <http://www.w3.org/2000/01/rdf-schema#label> "hasNationality" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight has passengers onboard." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> <http://www.w3.org/2000/01/rdf-schema#label> "hasOnboard" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten> <http://www.w3.org/2000/01/rdf-schema#comment> "A review author has written reviews." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten> <http://www.w3.org/2000/01/rdf-schema#label> "hasWritten" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight> <http://www.w3.org/2000/01/rdf-schema#comment> "A booking includes a flight." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight> <http://www.w3.org/2000/01/rdf-schema#label> "includesFlight" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip> <http://www.w3.org/2000/01/rdf-schema#comment> "A booking includes a trip." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip> <http://www.w3.org/2000/01/rdf-schema#label> "includesTrip" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#comment> "An itinerary point is located at some place." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.w3.org/2000/01/rdf-schema#label> "isLocatedAt" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf> <http://www.w3.org/2000/01/rdf-schema#comment> "A review measures the quality of air travel services." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf> <http://www.w3.org/2000/01/rdf-schema#label> "measuresQualityOf" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight is offered by an airline." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy> <http://www.w3.org/2000/01/rdf-schema#label> "offeredBy" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns> <http://www.w3.org/2000/01/rdf-schema#comment> "A person owns a pet." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns> <http://www.w3.org/2000/01/rdf-schema#label> "owns" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt> <http://www.w3.org/2000/01/rdf-schema#comment> "A trip starts at an itinerary point." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt> <http://www.w3.org/2000/01/rdf-schema#label> "startsAt" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight goes to an itinerary point." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> <http://www.w3.org/2000/01/rdf-schema#label> "to" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "A flight uses a particular aircraft." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft> <http://www.w3.org/2000/01/rdf-schema#label> "usesAircraft" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of the airline." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName> <http://www.w3.org/2000/01/rdf-schema#label> "airlineName" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when a flight flown." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown> <http://www.w3.org/2000/01/rdf-schema#label> "dateFlown" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished> <http://www.w3.org/2000/01/rdf-schema#comment> "Date when a review was published." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished> <http://www.w3.org/2000/01/rdf-schema#label> "datePublished" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model> <http://www.w3.org/2000/01/rdf-schema#comment> "Aircraft model." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model> <http://www.w3.org/2000/01/rdf-schema#label> "model" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a passenger." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName> <http://www.w3.org/2000/01/rdf-schema#label> "passengerName" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of a place." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> <http://www.w3.org/2000/01/rdf-schema#label> "placeName" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#withRestrictions> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2001/XMLSchema#maxInclusive> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid5 .
+_:genid5 <http://www.w3.org/2001/XMLSchema#minInclusive> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/2002/07/owl#onDatatype> <http://www.w3.org/2001/XMLSchema#integer> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> <http://www.w3.org/2000/01/rdf-schema#comment> "Rating given in a review." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> <http://www.w3.org/2000/01/rdf-schema#label> "rating" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether a flight is recommended or not in a review." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended> <http://www.w3.org/2000/01/rdf-schema#label> "recommended" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody> <http://www.w3.org/2000/01/rdf-schema#comment> "Text of a review." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody> <http://www.w3.org/2000/01/rdf-schema#label> "reviewBody" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType> <http://www.w3.org/2000/01/rdf-schema#range> _:genid6 .
+_:genid6 <http://www.w3.org/2002/07/owl#oneOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Premium Economy" .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "First Class" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Economy Class" .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "Business Class" .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType> <http://www.w3.org/2000/01/rdf-schema#comment> "Type of seat." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType> <http://www.w3.org/2000/01/rdf-schema#label> "seatType" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title> <http://www.w3.org/2000/01/rdf-schema#comment> "Title of a review." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title> <http://www.w3.org/2000/01/rdf-schema#label> "title" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified> <http://www.w3.org/2000/01/rdf-schema#comment> "Whether a review was verified or not." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified> <http://www.w3.org/2000/01/rdf-schema#label> "verified" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Services provided to passengers related to flying, including both ground and in-flight amenities." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> <http://www.w3.org/2000/01/rdf-schema#label> "Air travel services" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft> <http://www.w3.org/2000/01/rdf-schema#comment> "Vehicle that can fly through the air, carrying passengers, cargo, or for other purposes." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft> <http://www.w3.org/2000/01/rdf-schema#label> "Aircraft" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline> <http://www.w3.org/2000/01/rdf-schema#comment> "Company that provides air transport services for traveling passengers and freight." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline> <http://www.w3.org/2000/01/rdf-schema#label> "Airline" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/ontology/Airline" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> <http://www.w3.org/2000/01/rdf-schema#comment> "Reservation for a flight or trip made by a passenger." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> <http://www.w3.org/2000/01/rdf-schema#label> "Booking" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices> <http://www.w3.org/2000/01/rdf-schema#comment> "Assistance and care services provided by flight attendants to passengers during a flight." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices> <http://www.w3.org/2000/01/rdf-schema#label> "Cabin staff services" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> <http://www.w3.org/2000/01/rdf-schema#comment> "Large and densely populated urban area." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country> <http://www.w3.org/2000/01/rdf-schema#comment> "Political entity recognized as an independent nation, often characterized by a common government and boundaries that define its geographical limits" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country> <http://www.w3.org/2000/01/rdf-schema#label> "Country" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+_:genid11 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid12 .
+_:genid12 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+_:genid12 <http://www.w3.org/2002/07/owl#qualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid12 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> <http://www.w3.org/2000/01/rdf-schema#comment> "Journey made by an aircraft from one airport to another, including all stages of departure, travel, and arrival." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> <http://www.w3.org/2000/01/rdf-schema#label> "Flight" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#comment> "Services of provision of meals and drinks to passengers during a flight." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages> <http://www.w3.org/2000/01/rdf-schema#label> "Food and beverages services" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService> <http://www.w3.org/2000/01/rdf-schema#comment> "Airport-based support services, including check-in, baggage handling, and passenger assistance." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService> <http://www.w3.org/2000/01/rdf-schema#label> "Ground services" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific location that is a designated stop or destination along a travel route, as outlined in a travel itinerary." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Itinerary Point" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> <http://www.w3.org/2000/01/rdf-schema#comment> "Idividual or animal that travels in a vehicle specifically for the purpose of transportation, without being part of the operating or service crew." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> <http://www.w3.org/2000/01/rdf-schema#label> "Passenger" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Individual human who travels in a vehicle for the purpose of transportation, without being involved in operating the vehicle or providing onboard services." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet> <http://www.w3.org/2000/01/rdf-schema#comment> "Domesticated animal kept for companionship or pleasure, which may accompany its owner or a designated handler during travel." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet> <http://www.w3.org/2000/01/rdf-schema#label> "Pet" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific location or area, defined by geographical, cultural, or functional characteristics." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region> <http://www.w3.org/2000/01/rdf-schema#comment> "Area distinguished by unique, administrative characteristics, larger than a single location but smaller than a country." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region> <http://www.w3.org/2000/01/rdf-schema#label> "Region" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> <http://www.w3.org/2000/01/rdf-schema#comment> "Evaluation provided by a customer or user regarding their experience with a product, service, or establishment, often shared publicly to inform others or provide feedback to the provider." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> <http://www.w3.org/2000/01/rdf-schema#label> "Review" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#onClass> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+_:genid13 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor> <http://www.w3.org/2000/01/rdf-schema#comment> "An author of a review." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor> <http://www.w3.org/2000/01/rdf-schema#label> "ReviewAuthor" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> <http://www.w3.org/2000/01/rdf-schema#comment> "Journey or voyage made from one place to another, often for a specific purpose or pleasure." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> <http://www.w3.org/2000/01/rdf-schema#label> "Trip" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#comment> "Services of internet access and communication facilities aboard a flight." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity> <http://www.w3.org/2000/01/rdf-schema#label> "Wifi and Connectivtiy Service" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown> "2019-06-01T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.w3.org/2000/01/rdf-schema#comment> "Flight from Colombo to Amsterdam via Doha." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> <http://www.w3.org/2000/01/rdf-schema#label> "ColomboAmsterdamViaDoha" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> "Amsterdam" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity> <http://www.w3.org/2000/01/rdf-schema#comment> "The city of Amsterdam." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity> <http://www.w3.org/2000/01/rdf-schema#label> "Amsterdam" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Amsterdam" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP> <http://www.w3.org/2000/01/rdf-schema#comment> "Amsterdam Schipol Airport." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP> <http://www.w3.org/2000/01/rdf-schema#label> "AmsterdamSchipolAirport" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP> <http://www.w3.org/2000/01/rdf-schema#comment> "Bandaranaike International Airport." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP> <http://www.w3.org/2000/01/rdf-schema#label> "BanadaranaikeAirport" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType> "Economy Class" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1> <http://www.w3.org/2000/01/rdf-schema#comment> "Booking number 1." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1> <http://www.w3.org/2000/01/rdf-schema#label> "Booking1" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> "Colombo" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity> <http://www.w3.org/2000/01/rdf-schema#comment> "The city of Colombo." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity> <http://www.w3.org/2000/01/rdf-schema#label> "Colombo" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Colombo" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName> "Doha" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity> <http://www.w3.org/2000/01/rdf-schema#comment> "The city of Doha." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity> <http://www.w3.org/2000/01/rdf-schema#label> "Doha" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Doha" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP> <http://www.w3.org/2000/01/rdf-schema#comment> "Hamad International Airport." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP> <http://www.w3.org/2000/01/rdf-schema#label> "HamadInternationalAirport" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName> "QatarAirways" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline> <http://www.w3.org/2000/01/rdf-schema#comment> "The QatarAirways airline." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline> <http://www.w3.org/2000/01/rdf-schema#label> "QatarAirways" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> <http://www.w3.org/2000/01/rdf-schema#comment> "The review author named Ellen Van Der Linden." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden> <http://www.w3.org/2000/01/rdf-schema#label> "EllenVanDerLinden" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished> "2019-09-17T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> "5"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody> "My journey with Qatar was an adventure. I was flying out with my dog, a native Sri Lankan dog (breed was mixed/mongrel) and it was a nightmare to book. To be fair, it wasn't bad the first time - mixed breed was okay. Unfortunately I had to change the date of my flight and rebook my dog onto the flight, and that's where the nightmare began. The staff wanted to know what breed my dog was, despite my dog not having a breed at all. I called them on a Friday about the dog, they said I would hear from them within 48 hours. That following Wednesday I had to call them because I hadn't heard anything yet, only to find out they never processed the dog in the first place and my flight was that Sunday! Despite not having any problems with \"mixed breed\" the first time, I had loads of problems now. Mixed breed wasn't okay, despite stating it definitely wasn't one of the dogs not allowed to fly. Mongrel wasn't okay either. I eventually got approved just over a day before the flight. It was an absolute nightmare to deal with - but from others I heard that Qatar was one of the easiest airlines to deal with for pet transport, and no one had any problems so far (there have been hundreds of Sri Lankan dogs transported with Qatar before this problem). The flight itself wasn't bad. We departed Colombo on time, staff were great during check in and checking my and my dog's documents was really easy - the manager was even excited to see my dog, and her and another staff member dedicated their time to me, in my own queue. The staff on the plane were nice too, both from Colombo-Doha and Doha-Amsterdam and assured me my dog was okay, even checking with the pilot to make sure the dog was on the flight and the pilot was aware of the dog. The flight itself was comfortable, good movie selections too. The only thing that bothered me was a lack of legroom on my Doha-Amsterdam flight, because the row in front of us had 4 seats and our row had 3 seats, leaving less space for me because of the seat in front of me. Me and the dog arrived safely and they even changed the dog's bedding during the layover, so I'm happy about that. If it wasn't for the nightmare of booking my dog onto the flight, it would've been great." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title> "flight itself was comfortable" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.w3.org/2000/01/rdf-schema#comment> "Review number 1." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1> <http://www.w3.org/2000/01/rdf-schema#label> "Review1" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1> <http://www.w3.org/2000/01/rdf-schema#comment> "A dog from Sri Lanka." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1> <http://www.w3.org/2000/01/rdf-schema#label> "SriLankanDog" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> <http://www.w3.org/2000/01/rdf-schema#comment> "The trip number 1." .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1> <http://www.w3.org/2000/01/rdf-schema#label> "Trip1" .
+# 
+# http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "United Kingdom (country)" .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom> <http://www.w3.org/2000/01/rdf-schema#label> "UnitedKingdom" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/score> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid14 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#comment> "If a flight has passenger onboard and it has a booking, then that booking includes the flight" .
+_:genid14 <http://www.w3.org/2000/01/rdf-schema#label> "IfFlightHasPassengerAndPassengerHasBookingThenBookingIncludesFlight" .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid14 <http://www.w3.org/2003/11/swrl#body> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p> .
+_:genid16 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b> .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p> .
+_:genid18 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p> .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid20 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid22 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b> .
+_:genid24 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid14 <http://www.w3.org/2003/11/swrl#head> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid26 .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid26 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b> .
+_:genid26 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#comment> "If a review evaluating a flight has a rating of more than 4, then the flight is evaluated positively by the review" .
+_:genid27 <http://www.w3.org/2000/01/rdf-schema#label> "ReviewWithRatingMoreThan5IsPositiveEvaluation" .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid27 <http://www.w3.org/2003/11/swrl#body> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#arguments> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/score> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/score> .
+_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r> .
+_:genid33 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid37 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r> .
+_:genid39 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid27 <http://www.w3.org/2003/11/swrl#head> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r> .
+_:genid41 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid42 <http://www.w3.org/2000/01/rdf-schema#comment> "If a booking includes a trip and a flight, then the trip has the flight" .
+_:genid42 <http://www.w3.org/2000/01/rdf-schema#label> "IfBookingIncludesTripAndFlightThenTripHasFlight" .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid42 <http://www.w3.org/2003/11/swrl#body> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
+_:genid44 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t> .
+_:genid44 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid46 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b> .
+_:genid46 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
+_:genid48 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid48 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b> .
+_:genid50 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t> .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b> .
+_:genid52 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid42 <http://www.w3.org/2003/11/swrl#head> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f> .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t> .
+_:genid54 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
