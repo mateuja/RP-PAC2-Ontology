@@ -1,0 +1,208 @@
+{
+  "@context" : {
+    "reviewBody" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "passengerName" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ReviewAuthor" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor"
+    },
+    "airlineName" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Review" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"
+    },
+    "Country" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country"
+    },
+    "seatType" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType"
+    },
+    "model" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "includesTrip" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip",
+      "@type" : "@id"
+    },
+    "usesAircraft" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft",
+      "@type" : "@id"
+    },
+    "AirTravelServices" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "evaluatesPositively" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "hasWritten" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten",
+      "@type" : "@id"
+    },
+    "evaluates" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates",
+      "@type" : "@id"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person"
+    },
+    "offeredBy" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy",
+      "@type" : "@id"
+    },
+    "startsAt" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt",
+      "@type" : "@id"
+    },
+    "isLocatedAt" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt",
+      "@type" : "@id"
+    },
+    "hasNationality" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "verified" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "ItineraryPoint" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"
+    },
+    "hasBooking" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking",
+      "@type" : "@id"
+    },
+    "hasFlight" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight",
+      "@type" : "@id"
+    },
+    "Passenger" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"
+    },
+    "Place" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place"
+    },
+    "Aircraft" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft"
+    },
+    "title" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Booking" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"
+    },
+    "datePublished" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "endsAt" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt",
+      "@type" : "@id"
+    },
+    "placeName" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Airline" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline"
+    },
+    "from" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from",
+      "@type" : "@id"
+    },
+    "WifiAndConnectivity" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity"
+    },
+    "Flight" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City"
+    },
+    "GroundService" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService"
+    },
+    "recommended" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "hasLayover" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "Trip" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "rating" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating"
+    },
+    "to" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to",
+      "@type" : "@id"
+    },
+    "owns" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns",
+      "@type" : "@id"
+    },
+    "Pet" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet"
+    },
+    "includesFlight" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight",
+      "@type" : "@id"
+    },
+    "Region" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region"
+    },
+    "measuresQualityOf" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf",
+      "@type" : "@id"
+    },
+    "FoodAndBeverages" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages"
+    },
+    "CabinStaffServices" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices"
+    },
+    "dateFlown" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "hasOnboard" : {
+      "@id" : "http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard",
+      "@type" : "@id"
+    }
+  }
+}
