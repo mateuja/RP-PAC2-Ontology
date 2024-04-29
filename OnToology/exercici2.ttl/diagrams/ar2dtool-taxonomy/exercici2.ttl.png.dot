@@ -1,0 +1,16 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:ReviewAuthor" "base:City" "base:Passenger" "base:Place" "base:Person" "base:Pet" "base:WifiAndConnectivity" "base:GroundService" "base:Region" "base:Country" "base:AirTravelServices" "base:FoodAndBeverages" "base:CabinStaffServices" ; /*classes style*/
+	"base:WifiAndConnectivity" -> "base:AirTravelServices" [ label = "rdfs:subClassOf" ];
+	"base:Person" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+	"base:City" -> "base:Place" [ label = "rdfs:subClassOf" ];
+	"base:FoodAndBeverages" -> "base:AirTravelServices" [ label = "rdfs:subClassOf" ];
+	"base:CabinStaffServices" -> "base:AirTravelServices" [ label = "rdfs:subClassOf" ];
+	"base:GroundService" -> "base:AirTravelServices" [ label = "rdfs:subClassOf" ];
+	"base:Region" -> "base:Place" [ label = "rdfs:subClassOf" ];
+	"base:Country" -> "base:Place" [ label = "rdfs:subClassOf" ];
+	"base:ReviewAuthor" -> "base:Person" [ label = "rdfs:subClassOf" ];
+	"base:Pet" -> "base:Passenger" [ label = "rdfs:subClassOf" ];
+
+}
