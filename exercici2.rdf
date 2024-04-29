@@ -1,0 +1,1169 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/"
+     xml:base="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO">
+        <dc:creator>Jaume Mateu Mateu</dc:creator>
+        <dc:title>FSSO (Flight Satisfaction Survey Ontology)</dc:title>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/endsAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <rdfs:comment>A trip ends at an itinerary point.</rdfs:comment>
+        <rdfs:label>endsAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:comment>A review evaluates a flight.</rdfs:comment>
+        <rdfs:label>evaluates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates"/>
+        <rdfs:comment>A review might evaluate a flight positively.</rdfs:comment>
+        <rdfs:label>evaluatesPositively</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <rdfs:comment>A flight starts from an itinerary point.</rdfs:comment>
+        <rdfs:label>from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"/>
+        <rdfs:comment>A passenger has a booking for a flight.</rdfs:comment>
+        <rdfs:label>hasBooking</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:comment>A trip has one or more associated flights.</rdfs:comment>
+        <rdfs:label>hasFlight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasLayover">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <rdfs:comment>A trip might have a layover at an itinerary point.</rdfs:comment>
+        <rdfs:label>hasLayover</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasNationality">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country"/>
+        <rdfs:comment>A passenger has a nationality (is from a country).</rdfs:comment>
+        <rdfs:label>hasNationality</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"/>
+        <rdfs:comment>A flight has passengers onboard.</rdfs:comment>
+        <rdfs:label>hasOnboard</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:comment>A review author has written reviews.</rdfs:comment>
+        <rdfs:label>hasWritten</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:comment>A booking includes a flight.</rdfs:comment>
+        <rdfs:label>includesFlight</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"/>
+        <rdfs:comment>A booking includes a trip.</rdfs:comment>
+        <rdfs:label>includesTrip</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/isLocatedAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City"/>
+        <rdfs:comment>An itinerary point is located at some place.</rdfs:comment>
+        <rdfs:label>isLocatedAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/measuresQualityOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices"/>
+        <rdfs:comment>A review measures the quality of air travel services.</rdfs:comment>
+        <rdfs:label>measuresQualityOf</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/offeredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline"/>
+        <rdfs:comment>A flight is offered by an airline.</rdfs:comment>
+        <rdfs:label>offeredBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/owns">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet"/>
+        <rdfs:comment>A person owns a pet.</rdfs:comment>
+        <rdfs:label>owns</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/startsAt">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <rdfs:comment>A trip starts at an itinerary point.</rdfs:comment>
+        <rdfs:label>startsAt</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <rdfs:comment>A flight goes to an itinerary point.</rdfs:comment>
+        <rdfs:label>to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/usesAircraft">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft"/>
+        <rdfs:comment>A flight uses a particular aircraft.</rdfs:comment>
+        <rdfs:label>usesAircraft</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/airlineName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of the airline.</rdfs:comment>
+        <rdfs:label>airlineName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/dateFlown">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Date when a flight flown.</rdfs:comment>
+        <rdfs:label>dateFlown</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/datePublished">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment>Date when a review was published.</rdfs:comment>
+        <rdfs:label>datePublished</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/model">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Aircraft model.</rdfs:comment>
+        <rdfs:label>model</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/passengerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of a passenger.</rdfs:comment>
+        <rdfs:label>passengerName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/placeName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Name of a place.</rdfs:comment>
+        <rdfs:label>placeName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:withRestrictions rdf:parseType="Collection">
+                    <rdf:Description>
+                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1</xsd:minInclusive>
+                    </rdf:Description>
+                    <rdf:Description>
+                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</xsd:maxInclusive>
+                    </rdf:Description>
+                </owl:withRestrictions>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Rating given in a review.</rdfs:comment>
+        <rdfs:label>rating</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/recommended">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Whether a flight is recommended or not in a review.</rdfs:comment>
+        <rdfs:label>recommended</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/reviewBody">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Text of a review.</rdfs:comment>
+        <rdfs:label>reviewBody</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/seatType">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"/>
+        <rdfs:range>
+            <rdfs:Datatype>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                        <rdf:first>Business Class</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                <rdf:first>Economy Class</rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first>First Class</rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first>Premium Economy</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdfs:Datatype>
+        </rdfs:range>
+        <rdfs:comment>Type of seat.</rdfs:comment>
+        <rdfs:label>seatType</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/title">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Title of a review.</rdfs:comment>
+        <rdfs:label>title</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/verified">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment>Whether a review was verified or not.</rdfs:comment>
+        <rdfs:label>verified</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices">
+        <rdfs:comment>Services provided to passengers related to flying, including both ground and in-flight amenities.</rdfs:comment>
+        <rdfs:label>Air travel services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Aircraft">
+        <rdfs:comment>Vehicle that can fly through the air, carrying passengers, cargo, or for other purposes.</rdfs:comment>
+        <rdfs:label>Aircraft</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline">
+        <rdfs:comment>Company that provides air transport services for traveling passengers and freight.</rdfs:comment>
+        <rdfs:label>Airline</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/ontology/Airline</rdfs:sameAs>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking">
+        <rdfs:comment>Reservation for a flight or trip made by a passenger.</rdfs:comment>
+        <rdfs:label>Booking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/CabinStaffServices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices"/>
+        <rdfs:comment>Assistance and care services provided by flight attendants to passengers during a flight.</rdfs:comment>
+        <rdfs:label>Cabin staff services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place"/>
+        <rdfs:comment>Large and densely populated urban area.</rdfs:comment>
+        <rdfs:label>City</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place"/>
+        <rdfs:comment>Political entity recognized as an independent nation, often characterized by a common government and boundaries that define its geographical limits</rdfs:comment>
+        <rdfs:label>Country</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/from"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/to"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Journey made by an aircraft from one airport to another, including all stages of departure, travel, and arrival.</rdfs:comment>
+        <rdfs:label>Flight</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/FoodAndBeverages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices"/>
+        <rdfs:comment>Services of provision of meals and drinks to passengers during a flight.</rdfs:comment>
+        <rdfs:label>Food and beverages services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/GroundService">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices"/>
+        <rdfs:comment>Airport-based support services, including check-in, baggage handling, and passenger assistance.</rdfs:comment>
+        <rdfs:label>Ground services</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint">
+        <rdfs:comment>Specific location that is a designated stop or destination along a travel route, as outlined in a travel itinerary.</rdfs:comment>
+        <rdfs:label>Itinerary Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger">
+        <rdfs:comment>Idividual or animal that travels in a vehicle specifically for the purpose of transportation, without being part of the operating or service crew.</rdfs:comment>
+        <rdfs:label>Passenger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"/>
+        <rdfs:comment>Individual human who travels in a vehicle for the purpose of transportation, without being involved in operating the vehicle or providing onboard services.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"/>
+        <rdfs:comment>Domesticated animal kept for companionship or pleasure, which may accompany its owner or a designated handler during travel.</rdfs:comment>
+        <rdfs:label>Pet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place">
+        <rdfs:comment>Specific location or area, defined by geographical, cultural, or functional characteristics.</rdfs:comment>
+        <rdfs:label>Place</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Region">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Place"/>
+        <rdfs:comment>Area distinguished by unique, administrative characteristics, larger than a single location but smaller than a country.</rdfs:comment>
+        <rdfs:label>Region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review">
+        <rdfs:comment>Evaluation provided by a customer or user regarding their experience with a product, service, or establishment, often shared publicly to inform others or provide feedback to the provider.</rdfs:comment>
+        <rdfs:label>Review</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasWritten"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An author of a review.</rdfs:comment>
+        <rdfs:label>ReviewAuthor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip">
+        <rdfs:comment>Journey or voyage made from one place to another, often for a specific purpose or pleasure.</rdfs:comment>
+        <rdfs:label>Trip</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/WifiAndConnectivity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AirTravelServices"/>
+        <rdfs:comment>Services of internet access and communication facilities aboard a flight.</rdfs:comment>
+        <rdfs:label>Wifi and Connectivtiy Service</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+        <from rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP"/>
+        <hasOnboard rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden"/>
+        <offeredBy rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline"/>
+        <to rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP"/>
+        <dateFlown rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-06-01T00:00:00</dateFlown>
+        <rdfs:comment>Flight from Colombo to Amsterdam via Doha.</rdfs:comment>
+        <rdfs:label>ColomboAmsterdamViaDoha</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City"/>
+        <placeName>Amsterdam</placeName>
+        <rdfs:comment>The city of Amsterdam.</rdfs:comment>
+        <rdfs:label>Amsterdam</rdfs:label>
+        <rdfs:sameAs>http://dbpedia.org/resource/Amsterdam</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <isLocatedAt rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/AmsterdamCity"/>
+        <rdfs:comment>Amsterdam Schipol Airport.</rdfs:comment>
+        <rdfs:label>AmsterdamSchipolAirport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <isLocatedAt rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity"/>
+        <rdfs:comment>Bandaranaike International Airport.</rdfs:comment>
+        <rdfs:label>BanadaranaikeAirport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"/>
+        <includesTrip rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1"/>
+        <seatType>Economy Class</seatType>
+        <rdfs:comment>Booking number 1.</rdfs:comment>
+        <rdfs:label>Booking1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ColomboCity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City"/>
+        <placeName>Colombo</placeName>
+        <rdfs:comment>The city of Colombo.</rdfs:comment>
+        <rdfs:label>Colombo</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Colombo</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/City"/>
+        <placeName>Doha</placeName>
+        <rdfs:comment>The city of Doha.</rdfs:comment>
+        <rdfs:label>Doha</rdfs:label>
+        <rdfs:sameAs>https://dbpedia.org/page/Doha</rdfs:sameAs>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ItineraryPoint"/>
+        <isLocatedAt rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/DohaCity"/>
+        <rdfs:comment>Hamad International Airport.</rdfs:comment>
+        <rdfs:label>HamadInternationalAirport</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/QatarAirwaysAirline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Airline"/>
+        <airlineName>QatarAirways</airlineName>
+        <rdfs:comment>The QatarAirways airline.</rdfs:comment>
+        <rdfs:label>QatarAirways</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/RAEllenVanDerLinden">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/ReviewAuthor"/>
+        <hasBooking rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking1"/>
+        <hasNationality rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom"/>
+        <owns rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1"/>
+        <rdfs:comment>The review author named Ellen Van Der Linden.</rdfs:comment>
+        <rdfs:label>EllenVanDerLinden</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+        <evaluates rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO#20190917ColomboAmsterdamViaDoha"/>
+        <datePublished rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-09-17T00:00:00</datePublished>
+        <rating rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</rating>
+        <reviewBody>My journey with Qatar was an adventure. I was flying out with my dog, a native Sri Lankan dog (breed was mixed/mongrel) and it was a nightmare to book. To be fair, it wasn&apos;t bad the first time - mixed breed was okay. Unfortunately I had to change the date of my flight and rebook my dog onto the flight, and that&apos;s where the nightmare began. The staff wanted to know what breed my dog was, despite my dog not having a breed at all. I called them on a Friday about the dog, they said I would hear from them within 48 hours. That following Wednesday I had to call them because I hadn&apos;t heard anything yet, only to find out they never processed the dog in the first place and my flight was that Sunday! Despite not having any problems with &quot;mixed breed&quot; the first time, I had loads of problems now. Mixed breed wasn&apos;t okay, despite stating it definitely wasn&apos;t one of the dogs not allowed to fly. Mongrel wasn&apos;t okay either. I eventually got approved just over a day before the flight. It was an absolute nightmare to deal with - but from others I heard that Qatar was one of the easiest airlines to deal with for pet transport, and no one had any problems so far (there have been hundreds of Sri Lankan dogs transported with Qatar before this problem). The flight itself wasn&apos;t bad. We departed Colombo on time, staff were great during check in and checking my and my dog&apos;s documents was really easy - the manager was even excited to see my dog, and her and another staff member dedicated their time to me, in my own queue. The staff on the plane were nice too, both from Colombo-Doha and Doha-Amsterdam and assured me my dog was okay, even checking with the pilot to make sure the dog was on the flight and the pilot was aware of the dog. The flight itself was comfortable, good movie selections too. The only thing that bothered me was a lack of legroom on my Doha-Amsterdam flight, because the row in front of us had 4 seats and our row had 3 seats, leaving less space for me because of the seat in front of me. Me and the dog arrived safely and they even changed the dog&apos;s bedding during the layover, so I&apos;m happy about that. If it wasn&apos;t for the nightmare of booking my dog onto the flight, it would&apos;ve been great.</reviewBody>
+        <title>flight itself was comfortable</title>
+        <rdfs:comment>Review number 1.</rdfs:comment>
+        <rdfs:label>Review1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/SriLankanDog1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Pet"/>
+        <rdfs:comment>A dog from Sri Lanka.</rdfs:comment>
+        <rdfs:label>SriLankanDog</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"/>
+        <endsAt rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Amsterdam_Schipol_Airport_IP"/>
+        <hasLayover rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Hamad_International_Airport_IP"/>
+        <startsAt rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Bandaranaike_International_Airport_IP"/>
+        <rdfs:comment>The trip number 1.</rdfs:comment>
+        <rdfs:label>Trip1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/UnitedKingdom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Country"/>
+        <rdfs:comment>United Kingdom (country)</rdfs:comment>
+        <rdfs:label>UnitedKingdom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/score">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If a flight has passenger onboard and it has a booking, then that booking includes the flight</rdfs:comment>
+        <rdfs:label>IfFlightHasPassengerAndPassengerHasBookingThenBookingIncludesFlight</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasOnboard"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasBooking"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Passenger"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/p"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If a booking includes a trip and a flight, then the trip has the flight</rdfs:comment>
+        <rdfs:label>IfBookingIncludesTripAndFlightThenTripHasFlight</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesTrip"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Booking"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/includesFlight"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/b"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Trip"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/hasFlight"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/t"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment>If a review evaluating a flight has a rating of more than 4, then the flight is evaluated positively by the review</rdfs:comment>
+        <rdfs:label>ReviewWithRatingMoreThan5IsPositiveEvaluation</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Review"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                <swrl:classPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/Flight"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluates"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/rating"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/score"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThan"/>
+                                                        <swrl:arguments>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                <rdf:first rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/score"/>
+                                                                <rdf:rest>
+                                                                    <rdf:Description>
+                                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</rdf:first>
+                                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                                    </rdf:Description>
+                                                                </rdf:rest>
+                                                            </rdf:Description>
+                                                        </swrl:arguments>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/FSSO/evaluatesPositively"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/r"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/jamat/ontologies/2024/3/untitled-ontology-5/f"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
